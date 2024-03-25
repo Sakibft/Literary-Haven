@@ -12,13 +12,13 @@ const Nav = () => {
         </div>
         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
              
-        <NavLink to='/'>Home</NavLink>
+        <NavLink to='/' >Home</NavLink>
          <NavLink to='/listedbooks'>Listed Books</NavLink>
          <NavLink to='pagestoread'>Pages To Read </NavLink>
-     
+         
         </ul>
       </div>
-      <a className="btn btn-ghost text-xl">daisyUI</a>
+      <a className="text-xl playfair font-semibold">Book Vibe</a>
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1 flex gap-6">
