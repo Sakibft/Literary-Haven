@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-
  
+import { GiBookAura } from "react-icons/gi";
 
 const Nav = () => {
   return (
@@ -18,13 +18,17 @@ const Nav = () => {
          
         </ul>
       </div>
+      <div>
+         
+      <GiBookAura className=" text-2xl mr-3 text-[#23BE0A] font-black" />
+      </div>
       <a className="text-xl playfair font-semibold">Book Vibe</a>
     </div>
     <div className="navbar-center hidden lg:flex">
-      <ul className="menu menu-horizontal px-1 flex gap-6">
-         <NavLink to='/'>Home</NavLink>
-         <NavLink to='/listedbooks'>Listed Books</NavLink>
-         <NavLink to='pagestoread'>Pages To Read </NavLink>
+      <ul className="menu menu-horizontal px-1 flex gap-8">
+         <NavLink to='/' className={({isActive})=>isActive? 'text-[#23BE0A] border  font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Home</NavLink>
+         <NavLink to='/listedbooks' className={({isActive})=>isActive? 'text-[#23BE0A] border  font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Listed Books</NavLink>
+         <NavLink to='pagestoread' className={({isActive})=>isActive? 'text-[#23BE0A] border  font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Pages To Read </NavLink>
       </ul>
     </div>
     <div className="navbar-end flex gap-3">
