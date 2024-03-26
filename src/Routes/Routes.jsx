@@ -5,6 +5,7 @@ import ErrorPage from "../Pages/ErrorPage";
 import Home from "../Pages/Home"
 import ListedBooks from "../Pages/ListedBooks"
 import PagesToRead from "../Pages/PagesToRead"
+import Details from "../Pages/Details";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path:"/pagestoread",
         element:<PagesToRead></PagesToRead>
+      },
+      {
+        path:"/bookCardDetails/:id",
+        element:<Details></Details>
       }
     ]
     

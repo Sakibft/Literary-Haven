@@ -7,7 +7,7 @@ const ListedBooks = () => {
     <div>
       <div className="bg-[#1313130D] rounded-md">
         <h1 className="font-semibold text-xl p-2 text-center">
-          {" "}
+          
           <span className="text-2xl text-[#23BE0A]">~</span> Discover new
           horizons, pick up a book !
         </h1>
@@ -18,10 +18,10 @@ const ListedBooks = () => {
           <option disabled selected>
             SortBy
           </option>
-          <option>Marge</option>
-          <option>Bart</option>
-          <option>Lisa</option>
-          <option>Maggie</option>
+          <option>Rating</option>
+          <option>Number</option>
+          <option>Pages</option>
+          <option>Published</option>
         </select>
       </div>
       {/* 2 */}

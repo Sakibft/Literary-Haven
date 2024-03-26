@@ -1,10 +1,10 @@
  import { Link } from 'react-router-dom';
-import image from '../assets/banner.png'
+import imag from '../assets/banner.png'
  import { Button } from "@material-tailwind/react";
 
 const Banner = () => {
   return (
-    <div className='p-2'>
+    <div>
       <div className="h-[600px] md:w-full w-96 bg-[#1313130D] rounded-xl mt-5">
        <div className=" md:flex  md:justify-around ">
        {/* flex flex-col justify-center items-center */}
@@ -16,7 +16,7 @@ const Banner = () => {
 
         </div>
         <div className='md:mt-20'>
-          <img  className='sm:w-96 '  src={image} alt="" />
+          <img  className='sm:w-96 '  src={imag} alt="" />
 
         </div>
 

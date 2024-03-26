@@ -1,6 +1,6 @@
 import Banner from "../components/Banner";
 import Books from "../components/Books";
-import Details from "./Details";
+ 
 
  
 const Home = () => {
@@ -8,7 +8,6 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <Books></Books>
-      <Details></Details>
     </div>
   );
 };
