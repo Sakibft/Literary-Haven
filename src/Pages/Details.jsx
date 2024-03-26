@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import useAllCardData from '../Hooks/useAllCardData';
  
 import { useEffect, useState } from 'react';
+import {  saveReadCards, saveWishList } from '../Utils/localStorage';
  
 const Details = () => {
   const [card,setCard]=useState({});
@@ -19,10 +20,10 @@ const Details = () => {
  
  
  const handleRead = () =>{
-  console.log("read");
+ saveReadCards(card)
  }
  const handleWishList = () =>{
-  console.log("wishlist");
+   saveWishList(card)
  }
   
  
