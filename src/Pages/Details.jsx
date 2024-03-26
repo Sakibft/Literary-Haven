@@ -2,13 +2,13 @@ import image from '../assets/banner.png'
 const Details = () => {
   return (
     <div>
-      <div className="card card-side bg-base-100 shadow-xl mb-8 lg:h-[600px]">
-        <div className="w-1/2 bg-[#1313130D] rounded-xl                                                           ">
+      <div className="card lg:card-side bg-base-100 shadow-xl mb-8 lg:h-[600px]">
+        <div className="lg:w-1/2 w-96 bg-[#1313130D] rounded-xl                                                           ">
           <figure className="p-6">
           <img className='h-96 w-96 pt-10' src={image} alt="" />
           </figure>
         </div>
-        <div className="pl-6 w-1/2">
+        <div className="pl-6 lg:w-1/2 w-96">
           <h1 className="playfair text-xl font-semibold ">
             The Catcher in the Rye
           </h1>
