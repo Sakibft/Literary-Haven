@@ -1,5 +1,9 @@
-import ListedCards from "../components/ListedCards";
+import { Link } from "react-router-dom";
+
+import { useState } from "react";
+import LsWishlistCard from "./LsWishlistCard";
 const ListedBooks = () => {
+  const [tabindex,setTabIndex] = useState(0)
   return (
     <div>
       <div className="bg-[#1313130D] rounded-md">
@@ -22,19 +26,21 @@ const ListedBooks = () => {
       </div>
       {/* 2 */}
       <div role="tablist" className=" tabs tabs-lifted w-96 mt-4 mb-2">
-        <a role="tab" className=" tab tab-active">
+        <Link 
+        // to=''
+        onClick={()=>setTabIndex(0)}
+         role="tab" className={` ${tabindex === 0 ? ' tab tab-active ': 'tab'} `}>
           Read Books
-        </a>
-        <a role="tab" className="tab">
+        </Link>
+        <Link 
+        // to={`wishlist`}
+        onClick={()=>setTabIndex(1)}
+        role="tab" className={` ${tabindex === 1 ? ' tab tab-active ': 'tab'} `}>
          Wishlist Books
-        </a>
-      
+        </Link>
       </div>
-
-      {/* 3 */}
-
-      <div className="mt-8">
-        <ListedCards></ListedCards>
+      <div>
+        <LsWishlistCard></LsWishlistCard>
       </div>
     </div>
   );
