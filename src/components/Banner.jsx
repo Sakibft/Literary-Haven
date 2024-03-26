@@ -10,7 +10,7 @@ const Banner = () => {
         {/* sm:flex sm:flex-col sm:justify-center sm:items-center */}
           <h1 className="lg:text-7xl playfair font-bold">Books to freshen </h1>
           <h1  className="lg:text-7xl  playfair font-bold mt-4">up your bookshelf</h1>
-          <Button className='bg-[#23BE0A] border-none md:mt-12' variant="gradient ">gradient</Button>
+          <Button className='bg-[#23BE0A] border-none md:mt-12' variant="gradient ">View the list </Button>
 
         </div>
         <div className='md:mt-20'>
