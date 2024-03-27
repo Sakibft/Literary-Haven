@@ -8,6 +8,8 @@ import PagesToRead from "../Pages/PagesToRead"
 import Details from "../Pages/Details";
 import ListedCards from "../components/ListedCards";
 import LsWishlistCard from "../Pages/LsWishlistCard";
+import ViewDetails from "../Pages/ViewDetails";
+import ViewDetailsWishList from "../Pages/ViewDetailsWishList";
  
 
 const router = createBrowserRouter([
@@ -41,7 +43,15 @@ const router = createBrowserRouter([
       {
         path:"/bookCardDetails/:id",
         element:<Details></Details>
-      }
+      },
+      {
+        path:"/viewDetailsRead/:id",
+        element:<ViewDetails></ViewDetails>
+      },
+     {
+      path:"/viewDetailsWishlist/:id",
+      element:<ViewDetailsWishList></ViewDetailsWishList>
+     }
     ]
     
   },
