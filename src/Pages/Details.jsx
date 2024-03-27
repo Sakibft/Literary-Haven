@@ -30,13 +30,13 @@ const Details = () => {
  
   return (
     <div className='mt-[100px]'>
-      <div className="card lg:card-side bg-base-100 shadow-xl mb-8 lg:h-[600px]">
+      <div style={{border:'1px solid gray'}} className="card lg:card-side bg-base-100 shadow-xl lg:w-full w-96 mb-8 lg:h-[600px]">
         <div className="lg:w-1/2 w-96 bg-[#1313130D] rounded-xl">
           <figure className="mt-20">
           <img className='w-1/2'  src={image}   alt="" />
           </figure>
         </div>
-        <div className="pl-6 lg:w-1/2 w-96">
+        <div className="lg:pl-6 lg:w-1/2 w-96">
           <h1 className="playfair text-xl font-semibold ">
          {bookName}
           </h1>
@@ -57,7 +57,7 @@ const Details = () => {
               #Romance
               </button>
               <button className=" rounded-full px-4 bg-[#23BE0A0D] text-[#23BE0A] border-none   ">
-                #Identity
+               #haha
               </button>
             </div>
           </div>

@@ -26,9 +26,9 @@ const Nav = () => {
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1 flex gap-8">
-         <NavLink to='/' className={({isActive})=>isActive? 'text-[#23BE0A] border  font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Home</NavLink>
-         <NavLink to='/listedbooks' className={({isActive})=>isActive? 'text-[#23BE0A] border  font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Listed Books</NavLink>
-         <NavLink to='pagestoread' className={({isActive})=>isActive? 'text-[#23BE0A] border  font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Pages To Read </NavLink>
+         <NavLink to='/' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md   font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Home</NavLink>
+         <NavLink to='/listedbooks' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md  font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Listed Books</NavLink>
+         <NavLink to='pagestoread' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md  font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Pages To Read </NavLink>
       </ul>
     </div>
     <div className="navbar-end flex gap-3">

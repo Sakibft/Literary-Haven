@@ -18,7 +18,7 @@ const SingleCart = ({ card }) => {
  
   return (
     <Link to={`bookCardDetails/${bookId}`}>
-      <div className="card w-96 border p-4 ">
+      <div  style={{border:'1px solid gray'}}   className="card p-4 w-96 h-[400px] ">
         <div className="p-5  bg-[#F3F3F3] rounded-md">
           <figure>
             <img src={image} alt="Shoes" />

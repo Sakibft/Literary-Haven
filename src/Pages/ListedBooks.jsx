@@ -1,6 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 import { useState } from "react";
+ 
+ 
+import ListedCards from "../components/ListedCards";
 import LsWishlistCard from "./LsWishlistCard";
 const ListedBooks = () => {
   const [tabindex,setTabIndex] = useState(0)
@@ -25,23 +28,30 @@ const ListedBooks = () => {
         </select>
       </div>
       {/* 2 */}
+    
       <div role="tablist" className=" tabs tabs-lifted w-96 mt-4 mb-2">
         <Link 
-        // to=''
+        to=''
         onClick={()=>setTabIndex(0)}
          role="tab" className={` ${tabindex === 0 ? ' tab tab-active ': 'tab'} `}>
           Read Books
         </Link>
         <Link 
-        // to={`wishlist`}
+        to={`wishlist`}
         onClick={()=>setTabIndex(1)}
         role="tab" className={` ${tabindex === 1 ? ' tab tab-active ': 'tab'} `}>
          Wishlist Books
         </Link>
+     
+      </div>
+      <Outlet></Outlet>
+      {/* <div>
+       <ListedCards></ListedCards>
       </div>
       <div>
+        <h1 className="text-center mt-10">Wishlist</h1>
         <LsWishlistCard></LsWishlistCard>
-      </div>
+      </div> */}
     </div>
   );
 };
