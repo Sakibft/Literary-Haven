@@ -24,6 +24,11 @@ const ListedCards = () => {
       const sortYear = [...ReadCards].sort((a,b)=>b.yearOfPublishing - a.yearOfPublishing);
       setSortBook(sortYear)
     }
+    else if(sort === 'fiction'){
+      const sorFiction = [...ReadCards].filter(book=> book.category === 'Fiction')
+    setSortBook(sorFiction)
+    }
+    
   }
   useEffect(()=>{
     const storedReadCard = getReadItem()
@@ -45,7 +50,7 @@ const ListedCards = () => {
             <li onClick={()=>handleSortBook('year')}>
               <a>Publisher year</a>
             </li>
-            <li onClick={()=>handleSortBook('Fiction')}>
+            <li onClick={()=>handleSortBook('fiction')}>
               <a>Fiction</a>
             </li>
           </ul>

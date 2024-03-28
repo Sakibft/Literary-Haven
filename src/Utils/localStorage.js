@@ -18,7 +18,7 @@ export const saveReadCards = card => {
   }
   cards.push(card)
   localStorage.setItem('Read', JSON.stringify(cards))
-  toast.success('successfully added')
+  toast.success('Successfully added read book')
 }
 // wishList
  export const getWishList = () =>{
@@ -38,7 +38,8 @@ export const saveReadCards = card => {
   if(isExist||isExistRed){
     return toast.error('Already Added')
   }
+ 
   cards.push(card)
   localStorage.setItem('wishList', JSON.stringify(cards))
-  toast.success('added wishlist')
+  toast.success('Successfully added wishlist')
  }

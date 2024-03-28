@@ -57,7 +57,7 @@ const Details = () => {
                hahah
               </button>
               <button className=" rounded-full px-4 bg-[#23BE0A0D] text-[#23BE0A] border-none   ">
-               {tags[0]}
+             hahah
               </button>
             </div>
           </div>
