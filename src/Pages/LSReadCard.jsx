@@ -51,7 +51,7 @@ const LSReadCard = ({card}) => {
         <button className=" rounded-full px-4 py-2 bg-[#FFAC330D] text-[#FFAC33] border-none   ">
           Rating :  {rating}
         </button>
-       <Link  to={`/viewDetailsRead/${bookId}`}>
+       <Link  to={`/bookCardDetails/${bookId}`}>
        <button className=" rounded-full px-4 py-2 bg-[#23BE0A] text-white border-none   ">
           View Details
         </button>

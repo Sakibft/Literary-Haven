@@ -12,23 +12,29 @@ const Nav = () => {
         </div>
         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
              
-        <NavLink to='/' >Home</NavLink>
+        {/* <NavLink to='/' >Home</NavLink>
          <NavLink to='/listedbooks'>Listed Books</NavLink>
-         <NavLink to='pagestoread'>Pages To Read </NavLink>
-         
+         <NavLink to='pagestoread'>Pages To Read </NavLink> */}
+           <NavLink to='/' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md   font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Home</NavLink>
+         <NavLink to='/listedbooks' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md  font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Listed Books</NavLink>
+         <NavLink to='pagestoread' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md  font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Pages To Read </NavLink>
+         <NavLink to='/library' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md  font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Top Rated</NavLink>
+         <NavLink to='joinnow' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md  font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Join Now </NavLink>
         </ul>
       </div>
       <div>
          
-      <GiBookAura className=" text-2xl mr-3 text-[#23BE0A] font-black" />
+      <GiBookAura className=" text-3xl mr-3 text-[#23BE0A] font-black" />
       </div>
-      <a className="text-xl playfair font-semibold">Book Vibe</a>
+      <a className="text-2xl playfair font-semibold">Book Vibe</a>
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1 flex gap-8">
-         <NavLink to='/' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md   font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Home</NavLink>
-         <NavLink to='/listedbooks' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md  font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Listed Books</NavLink>
-         <NavLink to='pagestoread' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md  font-semibold text-xl playfair':'font-semibold text-xl playfair'}>Pages To Read </NavLink>
+         <NavLink to='/' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md   font-semibold text-2xl playfair':'font-semibold text-2xl playfair'}>Home</NavLink>
+         <NavLink to='/listedbooks' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md  font-semibold text-2xl playfair':'font-semibold text-2xl playfair'}>Listed Books</NavLink>
+         <NavLink to='pagestoread' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md  font-semibold text-2xl playfair':'font-semibold text-2xl playfair'}>Pages To Read </NavLink>
+         <NavLink to='/library' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md  font-semibold text-2xl playfair':'font-semibold text-2xl playfair'}>Top Rated</NavLink>
+         <NavLink to='joinnow' className={({isActive})=>isActive? 'text-[#23BE0A]  border px-2 py-1 border-green-400 rounded-md  font-semibold text-2xl playfair':'font-semibold text-2xl playfair'}>Join Now </NavLink>
       </ul>
     </div>
     <div className="navbar-end flex gap-3">

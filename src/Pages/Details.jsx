@@ -10,14 +10,14 @@ const Details = () => {
   const {id}= useParams();
   
   useEffect(()=>{
-    const singleCARD = data.find(item=> item.bookId == id);
+    const singleCARD = data?.find(item=> item.bookId == id);
     if(singleCARD){
 
       setCard(singleCARD);
     }
   },[data,id]);
    const {image, bookName, author, category, review, tags , totalPages, publisher, yearOfPublishing, rating, } = card;
- 
+ console.log(tags);
  
  const handleRead = () =>{
  saveReadCards(card)
@@ -54,10 +54,10 @@ const Details = () => {
             <div className="flex gap-3">
               <p>Tag</p>
               <button className="rounded-full px-2 bg-[#23BE0A0D] text-[#23BE0A] border-none">
-              #Romance
+               hahah
               </button>
               <button className=" rounded-full px-4 bg-[#23BE0A0D] text-[#23BE0A] border-none   ">
-               #haha
+               {tags[0]}
               </button>
             </div>
           </div>

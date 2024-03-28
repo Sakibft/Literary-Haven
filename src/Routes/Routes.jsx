@@ -8,8 +8,8 @@ import PagesToRead from "../Pages/PagesToRead"
 import Details from "../Pages/Details";
 import ListedCards from "../components/ListedCards";
 import LsWishlistCard from "../Pages/LsWishlistCard";
-import ViewDetails from "../Pages/ViewDetails";
-import ViewDetailsWishList from "../Pages/ViewDetailsWishList";
+import Library from "../Pages/Library";
+import JoinNOw from "../components/JoinNOw";
  
 
 const router = createBrowserRouter([
@@ -45,13 +45,14 @@ const router = createBrowserRouter([
         element:<Details></Details>
       },
       {
-        path:"/viewDetailsRead/:id",
-        element:<ViewDetails></ViewDetails>
+        path:"/library",
+        element:<Library></Library>
       },
-     {
-      path:"/viewDetailsWishlist/:id",
-      element:<ViewDetailsWishList></ViewDetailsWishList>
-     }
+      {
+        path:"/joinnow",
+        element:<JoinNOw></JoinNOw>
+      }
+ 
     ]
     
   },
