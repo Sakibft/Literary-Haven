@@ -54,10 +54,10 @@ const Details = () => {
             <div className="flex gap-3">
               <p>Tag</p>
               <button className="rounded-full px-2 bg-[#23BE0A0D] text-[#23BE0A] border-none">
-               hahah
+                 {tags && tags[0]}
               </button>
               <button className=" rounded-full px-4 bg-[#23BE0A0D] text-[#23BE0A] border-none   ">
-             hahah
+              {tags && tags[1]}
               </button>
             </div>
           </div>

@@ -5,7 +5,7 @@ const Books = () => {
   const {data,loading} = useAllCardData();
   
   return (
-    <div className="mt-10 mb-20 ">
+    <div className="mt-10 mb-8 ">
       <h1 className="font-bold text-4xl text-center">Books</h1>
       <div className="mt-5 grid lg:grid-cols-3 justify-around gap-y-3 gap-x-4">
 

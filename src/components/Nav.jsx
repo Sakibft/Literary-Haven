@@ -22,9 +22,9 @@ const Nav = () => {
       </div>
       <div>
          
-      <GiBookAura className=" text-3xl mr-3 text-[#23BE0A] font-black" />
+      <GiBookAura className=" md:text-3xl text-lg mr-3 text-[#23BE0A] font-black" />
       </div>
-      <a className="md:text-2xl text-lg playfair font-semibold">Literary Haven</a>
+      <a className="md:text-2xl text-base playfair font-semibold">Literary Haven</a>
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1 flex gap-8">
