@@ -1,8 +1,15 @@
-# React + Vite
+ Website Name : Literary Haven
+ 
+      Live site : https://dashing-tartufo-0a54ea.netlify.app
+ 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Five bullet Point features about my website .
+ 
+1. It is a organized and eye-catching website .
+2. User-Friendly Interface.
+3. Interactive Reading Features.
+4. It is an educational website from here you can learn   a lot.
+5. If you want to join us that is also possible
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
